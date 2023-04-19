@@ -161,10 +161,105 @@ footer i:hover{
     background-color: gray;
 }
 
+.fondo{
+    border: 5px solid black;
+    background-color: black;
+    background-image: url(img/thermo-804906_1280.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.productos{
+    width: 100%;
+    height: auto;
+    background-color: rgb(161, 182, 209);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+   
+}
+
+.item1{
+    background-image: url(img/mate\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background-image: url(img/mate\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(img/mate\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4{
+    background-image: url(img/mate\ 4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5{
+    background-image: url(img/mate\ 5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6{
+    background-image: url(img/mate\ 6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item7{
+    background-image: url(img/mate\ 7.jpg);
+    background-size: cover;
+}
+
+.item8{
+    background-image: url(img/mate\ 8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 480px){
+    .logo{
+        font-size: 15px;   
+    }
+
+    header{
+        font-size: 15px ;
+    }
+
+    main{
+        height: 350px;
+    }
+    
+    .nleft{
+        height: 200px;
+        width: 100%;
+    }
+
+    .nright{
+        width: 100%;
+    }
+
+}
+
+
 @media only screen and (min-width: 480px){
     .logo{
         font-size: 18px;   
     }
+
     header{
         font-size: 18px ;
     }
@@ -181,6 +276,17 @@ footer i:hover{
     .nright{
         width: 100%;
     }
+
+    .fondo{
+        height: 350px;
+    }
+
+    .productos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+
 }
     
 @media only screen and (min-width: 768px) and (max-width: 1023px){
@@ -199,6 +305,54 @@ footer i:hover{
         height: 280px;
         background-position: center;
         background-size: cover;
+    }
+
+    .fondo{
+        height: 550px;
+    }
+
+    .productos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .item1{
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+
+    .item2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .item4{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .item7{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .item8{
+        grid-column: 2/4;
+        grid-row: 4/5;
     }
 }    
 
@@ -223,6 +377,16 @@ footer i:hover{
 
     .nright{
         width: 50%;
+    }
+
+    .fondo{
+        height: 840px;
+
+    }
+
+    .productos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 700px 700px;
     }
 }
 
