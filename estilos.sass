@@ -1,24 +1,29 @@
 /* font-family: 'Oswald', sans-serif */
 
+$primary-color:rgb(161, 182, 209)
+
 *
     margin: 0
     padding: 0
     box-sizing: border-box
 
 body
-    background-color: rgb(161, 182, 209)
+    background-color: $primary-color
 
 html
     scroll-behavior: smooth
 
+// pagina inicio y nosotros
+
 header
     display: flex
     justify-content: space-between
-    background-color: rgb(161, 182, 209)
+    background-color: $primary-color
     text-shadow: 0 0 5px aqua
     font-size: 25px
     padding: 20px
     font-family: 'Oswald', sans-serif
+
 
 .logo
     color: white
@@ -52,7 +57,7 @@ main
 
 h2
     text-align: center
-    background-color: rgb(161, 182, 209)
+    background-color: $primary-color
     text-shadow: 0 0 5px aqua
     color: white
     font-size: 40px
@@ -62,7 +67,7 @@ h2
 .nosotros 
     min-height: 450px
     width: 100%
-    background-color: rgb(161, 182, 209)
+    background-color: $primary-color
     display: flex
     flex-wrap: wrap
 
@@ -82,7 +87,7 @@ h2
 .nright
     height: 100%
     width: 50%
-    background-color: rgb(161, 182, 209)
+    background-color: $primary-color
     padding: 20px
 
 .nright p
@@ -127,6 +132,9 @@ footer i:hover
 .subir:hover
     background-color: gray
 
+
+// pagina productos
+
 .fondo
     border: 5px solid black
     background-color: black
@@ -139,7 +147,7 @@ footer i:hover
 .productos
     width: 100%
     height: auto
-    background-color: rgb(161, 182, 209)
+    background-color: $primary-color
     padding: 20px
     display: grid
     grid-template-columns: 1fr
@@ -185,6 +193,78 @@ footer i:hover
     background-size: cover
     background-position: center
 
+// pagina contacto
+
+.fotologo
+    background-image: linear-gradient(to top, $primary-color, beige, $primary-color)
+    background-color: Silver
+    border: none
+    display: flex
+    
+
+.fotologo div
+    width: 33%
+    margin-top: 100px
+
+div.logoContacto
+    background-color: #000
+    background-image: url(img/logo\ piola.jpg)
+    background-size: cover
+    background-position: center
+    width: 50%
+    height: 600px
+    border-radius: 50%
+
+.contactos
+    width: 100%
+    height: auto
+    background-color: $primary-color
+    padding: 20px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: repeat(2, auto)
+    grid-gap: 40px
+
+.contacto1
+    background-image: url(img/face.webp)
+    background-size: cover
+    background-position: center
+    border-radius: 33%
+
+.contacto2
+    background-image: url(img/twitter.png)
+    background-size: cover
+    background-position: center
+    border-radius: 33%
+
+.contacto3
+    background-image: url(img/insta.webp)
+    background-size: cover
+    background-position: center
+    border-radius: 33%
+
+.contacto4
+    background-image: url(img/mail\ pa.webp)
+    background-size: cover
+    background-position: center
+    border-radius: 33%
+
+// pagina preguntasFrecuentes
+
+.preguntas
+    font-size: 35px
+    font-family: emoji
+    font-weight: bold
+    text-shadow: 0 0 5px gray
+    margin: 10px
+
+.respuestas
+    font-size: 25px
+    font-family: initial
+    margin: 20px
+
+
+
 @media only screen and (max-width: 480px)
     .logo
         font-size: 15px   
@@ -202,9 +282,35 @@ footer i:hover
         height: 200px
         width: 100%
     
-
     .nright
         width: 100%
+    
+    div.logoContacto
+        height: 200px
+
+    .contactos
+        grid-template-columns: 1fr 1fr 
+    
+    .contacto1
+        height: 200px
+    
+    
+    .contacto2
+        height: 200px
+    
+
+    .contacto3
+        height: 200px
+    
+    
+    .contacto4
+        height: 200px
+    
+    .preguntas
+        font-size: 25px
+
+    .respuestas
+        font-size: 15px
     
 @media only screen and (min-width: 480px)
     .logo
@@ -236,8 +342,32 @@ footer i:hover
         grid-template-columns: 1fr 1fr
         grid-template-rows: repeat(4, 200px)
     
+    div.logoContacto
+        height: 200px
 
+    .contactos
+        grid-template-columns: 1fr 1fr
+    
+    .contacto1
+        height: 200px
+    
+    
+    .contacto2
+        height: 200px
+    
 
+    .contacto3
+        height: 200px
+    
+    
+    .contacto4
+        height: 200px
+    
+    .preguntas
+        font-size: 30px
+
+    .respuestas
+        font-size: 20px
 
     
 @media only screen and (min-width: 768px) and (max-width: 1023px)
@@ -305,6 +435,28 @@ footer i:hover
         grid-column: 2/4
         grid-row: 4/5
     
+    div.logoContacto
+        height: 300px
+
+    .contactos
+        grid-template-columns: 1fr 1fr 1fr 1fr
+    
+    .contacto1
+        height: 300px
+    
+    
+    .contacto2
+        height: 300px
+    
+
+    .contacto3
+        height: 300px
+    
+    
+    .contacto4
+        height: 300px
+        width: auto
+    
     
 
 @media only screen and (min-width: 1024px)
@@ -333,9 +485,35 @@ footer i:hover
     .fondo
         height: 840px
 
-    
 
     .productos
         grid-template-columns: repeat(4, 1fr)
         grid-template-rows: 700px 700px
     
+    .contactos
+        grid-template-columns:  1fr 1fr 1fr 1fr
+
+    div.logoContacto
+        height: 600px
+
+    .contacto1
+        height: 400px
+        width: auto
+    
+    
+    .contacto2
+        height: 400px
+        width: auto
+    
+
+    .contacto3
+        height: 400px
+        width: auto
+    
+    
+    .contacto4
+        height: 400px
+        width: auto
+    
+
+
