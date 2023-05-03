@@ -1,392 +1,337 @@
-/* font-family: 'Oswald', sans-serif; */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* font-family: 'Oswald', sans-serif */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+body {
+  background-color: rgb(161, 182, 209);
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(161, 182, 209);
-    text-shadow: 0 0 5px aqua;
-    font-size: 25px;
-    padding: 20px;
-    font-family: 'Oswald', sans-serif;
-    
+html {
+  scroll-behavior: smooth;
 }
 
-
-.logo{
-    color: white;
-    font-size: 30px;
-    float: left;
-    margin-left: 20px;
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(161, 182, 209);
+  text-shadow: 0 0 5px aqua;
+  font-size: 25px;
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
-.logo span{
-    color: black;
+.logo {
+  color: white;
+  font-size: 30px;
+  float: left;
+  margin-left: 20px;
 }
 
-
-.barra li a{
-    text-decoration: none;
-    color: white ;
+.logo span {
+  color: black;
 }
 
-.barra li a:hover{
-    color: rgb(0, 0, 0);
-    
+.barra li a {
+  text-decoration: none;
+  color: white;
 }
 
-.barra li{
-    display: inline-block;
-    list-style: none;
+.barra li a:hover {
+  color: rgb(0, 0, 0);
 }
 
-main{
-    border: 5px solid black;
-    background-color: black;
-    background-image: url(img/mate-7481172_1280.jpg);
-    height: 600px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+.barra li {
+  display: inline-block;
+  list-style: none;
 }
 
-h2{
-    text-align: center;
-    background-color: rgb(161, 182, 209);
-    text-shadow: 0 0 5px aqua;
-    color: white;
-    font-size: 30px;
-    padding: 20px;
-    font-family: 'Oswald', sans-serif;
+main {
+  border: 5px solid black;
+  background-color: black;
+  background-image: url(img/mate-7481172_1280.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.nosotros{ 
-    min-height: 450px;
-    width: 100%;
-    background-color: rgb(161, 182, 209);
-    display: flex;
-    flex-wrap: wrap;
+h2 {
+  text-align: center;
+  background-color: rgb(161, 182, 209);
+  text-shadow: 0 0 5px aqua;
+  color: white;
+  font-size: 40px;
+  padding: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
-
-.nleft{
-    background-image: url(img/logo\ piola.jpg);
-    height: 450px;
-    width: 50% ;
-    border: 5px solid black;
-    background-size: cover;
-    background-position: center;
+.nosotros {
+  min-height: 450px;
+  width: 100%;
+  background-color: rgb(161, 182, 209);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.nleft:hover{
-    filter: grayscale(100%);
-    
+.nleft {
+  background-image: url(img/logo\ piola.jpg);
+  height: 450px;
+  width: 50%;
+  border: 5px solid black;
+  background-size: cover;
+  background-position: center;
 }
 
-.nright{
-    height: 100%;
-    width: 50%;
-    background-color: rgb(161, 182, 209);
-    padding: 20px;
+.nleft:hover {
+  filter: grayscale(100%);
 }
 
-
-
-.nright h3{
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-    text-shadow: 0 0 5px aqua;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
+.nright {
+  height: 100%;
+  width: 50%;
+  background-color: rgb(161, 182, 209);
+  padding: 20px;
 }
 
-.nright p{
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    
+.nright p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
 }
 
-.footer{
-    height: auto;
-    width: 100%;
-    background-color: gray;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
 }
 
-footer p{
-    font-family: 'Oswald', sans-serif;
-    text-shadow: 0 0 5px aqua;
+footer p {
+  font-family: "Oswald", sans-serif;
+  text-shadow: 0 0 5px aqua;
 }
 
-footer i{
-    color: aqua;
-    font-size: 30px;
-    margin-top: 10px;
-    letter-spacing: 30px;
+footer i {
+  color: aqua;
+  font-size: 30px;
+  margin-top: 10px;
+  letter-spacing: 30px;
 }
 
-footer i:hover{
-    color: grey;
+footer i:hover {
+  color: grey;
 }
 
-.subir{
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    background-color: skyblue;
-    padding: 7px;
-    color: #000000;
+.subir {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  background-color: skyblue;
+  padding: 7px;
+  color: #000000;
+  font-size: 15px;
+  border-radius: 33%;
+  border: 2px solid #ffffff;
+}
+
+.subir:hover {
+  background-color: gray;
+}
+
+.fondo {
+  border: 5px solid black;
+  background-color: black;
+  background-image: url(img/thermo-804906_1280.jpg);
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.productos {
+  width: 100%;
+  height: auto;
+  background-color: rgb(161, 182, 209);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 200px);
+  grid-gap: 20px;
+}
+
+.item1 {
+  background-image: url(img/mate\ 1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url(img/mate\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url(img/mate\ 3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item4 {
+  background-image: url(img/mate\ 4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item5 {
+  background-image: url(img/mate\ 5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item6 {
+  background-image: url(img/mate\ 6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item7 {
+  background-image: url(img/mate\ 7.jpg);
+  background-size: cover;
+}
+
+.item8 {
+  background-image: url(img/mate\ 8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
     font-size: 15px;
-    border-radius: 33%;
-    border: 2px solid #ffffff;
-
-}
-
-.subir:hover{
-    background-color: gray;
-}
-
-.fondo{
-    border: 5px solid black;
-    background-color: black;
-    background-image: url(img/thermo-804906_1280.jpg);
-    height: 600px;
+  }
+  header {
+    font-size: 15px;
+  }
+  main {
+    height: 350px;
+  }
+  .nleft {
+    height: 200px;
     width: 100%;
-    background-size: cover;
+  }
+  .nright {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .logo {
+    font-size: 18px;
+  }
+  header {
+    font-size: 18px;
+  }
+  main {
+    height: 350px;
+  }
+  .nleft {
+    height: 200px;
+    width: 100%;
+  }
+  .nright {
+    width: 100%;
+  }
+  .fondo {
+    height: 350px;
+  }
+  .productos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo {
+    font-size: 30px;
+  }
+  header {
+    font-size: 30px;
+  }
+  main {
+    height: 550px;
+  }
+  .nleft {
+    height: 280px;
     background-position: center;
+    background-size: cover;
+  }
+  .fondo {
+    height: 550px;
+  }
+  .productos {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item1 {
+    grid-column: 1/1;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .item7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .item8 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+  }
 }
-
-.productos{
-    width: 100%;
+@media only screen and (min-width: 1024px) {
+  .logo {
+    font-size: 40px;
+  }
+  header {
+    font-size: 35px;
+  }
+  main {
+    height: 840px;
+  }
+  .nleft {
+    width: 50%;
     height: auto;
-    background-color: rgb(161, 182, 209);
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 200px);
-    grid-gap: 20px;
-   
-}
-
-.item1{
-    background-image: url(img/mate\ 1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item2{
-    background-image: url(img/mate\ 2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item3{
-    background-image: url(img/mate\ 3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item4{
-    background-image: url(img/mate\ 4.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item5{
-    background-image: url(img/mate\ 5.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item6{
-    background-image: url(img/mate\ 6.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.item7{
-    background-image: url(img/mate\ 7.jpg);
-    background-size: cover;
-}
-
-.item8{
-    background-image: url(img/mate\ 8.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-@media only screen and (max-width: 480px){
-    .logo{
-        font-size: 15px;   
-    }
-
-    header{
-        font-size: 15px ;
-    }
-
-    main{
-        height: 350px;
-    }
-    
-    .nleft{
-        height: 200px;
-        width: 100%;
-    }
-
-    .nright{
-        width: 100%;
-    }
-
-}
-
-
-@media only screen and (min-width: 480px){
-    .logo{
-        font-size: 18px;   
-    }
-
-    header{
-        font-size: 18px ;
-    }
-
-    main{
-        height: 350px;
-    }
-
-    .nleft{
-        height: 200px;
-        width: 100%;
-    }
-
-    .nright{
-        width: 100%;
-    }
-
-    .fondo{
-        height: 350px;
-    }
-
-    .productos{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 200px);
-    }
-
-
-}
-    
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-    .logo{
-        font-size: 30px;
-    }
-    header{
-        font-size: 30px;
-    }
-
-    main{
-        height: 550px;
-    }
-
-    .nleft{
-        height: 280px;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .fondo{
-        height: 550px;
-    }
-
-    .productos{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .item1{
-        grid-column: 1/1;
-        grid-row: 1/2;
-    }
-
-    .item2{
-        grid-column: 2/4;
-        grid-row: 1/2;
-    }
-
-    .item3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .item4{
-        grid-column: 2/4;
-        grid-row: 2/3;
-    }
-
-    .item5{
-        grid-column: 1/3;
-        grid-row: 3/4;
-    }
-
-    .item6{
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-
-    .item7{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .item8{
-        grid-column: 2/4;
-        grid-row: 4/5;
-    }
-}    
-
-@media only screen and (min-width: 1024px){
-    .logo{
-        font-size: 40px;
-    }
-
-    header{
-        font-size: 35px;
-    }
-
-    main{
-        height: 840px;
-    }
-
-    .nleft{ 
-        width: 50%;
-        height: auto;
-        
-    }
-
-    .nright{
-        width: 50%;
-    }
-
-    .fondo{
-        height: 840px;
-
-    }
-
-    .productos{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 700px 700px;
-    }
-}
-
+  }
+  .nright {
+    width: 50%;
+  }
+  .fondo {
+    height: 840px;
+  }
+  .productos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 700px 700px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
